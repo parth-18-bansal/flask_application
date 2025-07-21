@@ -4,4 +4,5 @@
 "Type Changes":
   - all:
     - changed-files:
-      - any-globs-to-any-file: "src/types/**"
+      - any-glob-to-any-file:
+        - src/types/**
