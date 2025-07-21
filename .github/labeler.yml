@@ -2,5 +2,6 @@
 #   - src/types/**
 
 "Type Changes":
-  - changed-files:
-    - src/types/**
+  - all:
+    - changed-files:
+      - all-globs-to-any-file: ["src/types/**"]
