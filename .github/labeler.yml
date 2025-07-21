@@ -1,2 +1,6 @@
+# "Type Changes":
+#   - src/types/**
+
 "Type Changes":
-  - src/types/**
+  - changed-files:
+    - src/types/**
