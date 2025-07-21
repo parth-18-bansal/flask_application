@@ -6,7 +6,7 @@ on:
 
 jobs:
   label-type-changes:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: read
       pull-requests: write
@@ -17,5 +17,5 @@ jobs:
       - name: Label PR for type changes
         uses: actions/labeler@v5
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/labeler.yml
+          #repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: ../.github/labeler.yml
