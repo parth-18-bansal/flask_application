@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with: 
-          ref: ${{ github.event.pull_request.base.ref }} # Check out base branch for safety
 
       - name: Log checked-out branch and commit
         run: |
