@@ -16,6 +16,13 @@ jobs:
         with: 
           ref: ${{ github.event.pull_request.base.ref }} # Check out base branch for safety
 
+      - name: Log checked-out branch and commit
+        run: |
+          echo "Current branch: $(git branch --show-current)"
+          echo "Commit SHA: $(git rev-parse HEAD)"
+          echo "Repository: $(git config --get remote.origin.url)"
+          ls -R
+
       - name: Label PR for type changes
         uses: actions/labeler@v5
         with:
